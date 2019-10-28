@@ -38,7 +38,7 @@ const displayScoreBoard = (s = score, g = goal, w = wins, l = losses) => {
 
 const initializeClickHandlers = () => {
 
-    $("#RESET").click(function () {
+    $("#reset").click(function () {
         $("#message").empty();
         displayScoreBoard(0, randomNum(gMin, gMax), wins, losses);
         createCrystals(numOfCrystals);
@@ -56,7 +56,7 @@ const initializeClickHandlers = () => {
 
         if (score === goal) {
             $("#div-of-crystals").empty();
-            $("#message").append("<h1>Congradulations! You Won! Click Reset to play again!</h1>");
+            $("#message").append("<h1>Congratulations! You Won! Click Reset to play again!</h1>");
             wins++;
         }
 
